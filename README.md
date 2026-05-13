@@ -21,7 +21,7 @@ AI-generated code now represents a meaningful share of new commits across the in
 
 vbsec brings production-grade security review into the AI coding loop. It runs as a native Claude Code skill — type `/vbs-scan-security` and receive a structured report covering 20+ categories of vulnerabilities. There are no external API calls, no separate tool installation, and no additional infrastructure to maintain.
 
-The scanner has been validated against OWASP and other deliberately vulnerable open-source benchmarks (training applications maintained by the security community) — vbsec identifies findings matching the documented challenges across SQL injection, NoSQL injection, JWT misuse, broken access control, mass assignment, deserialization RCE, and more.
+vbsec has been exercised against intentionally vulnerable open-source training apps such as OWASP Juice Shop — and identifies findings that line up with the documented vulnerability challenges across SQL injection, NoSQL injection, JWT misuse, broken access control, mass assignment, deserialization RCE, and more.
 
 Generic rules apply to every language. Specialized rule overlays exist for Go, PHP, TypeScript/JavaScript, and Python, covering common frameworks: React, Vue, Angular, Express, NestJS, Next.js, Django, Flask, FastAPI, SQLAlchemy, Sequelize, Prisma, and Mongoose. Additional language overlays are on the roadmap.
 

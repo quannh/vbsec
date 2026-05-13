@@ -21,7 +21,7 @@ Mã nguồn do AI sinh ra hiện chiếm tỷ trọng đáng kể trong các com
 
 vbsec đưa quy trình rà soát bảo mật cấp production vào trong vòng lặp lập trình với AI. Skill chạy trực tiếp trong Claude Code — bạn chỉ cần gõ `/vbs-scan-security` để nhận một báo cáo có cấu trúc rõ ràng, bao phủ hơn 20 nhóm lỗ hổng phổ biến. Không gọi API ngoài, không cần cài thêm công cụ, không cần duy trì hạ tầng phụ trợ.
 
-Trình quét đã được kiểm thử với benchmark OWASP và nhiều bộ mã nguồn mở khác có chủ đích chứa lỗ hổng để dùng cho mục đích đào tạo — vbsec phát hiện được hầu hết các lỗ hổng đã được tài liệu hoá: SQL Injection, NoSQL Injection, JWT misuse, Broken Access Control, Mass Assignment, RCE qua deserialization, và nhiều nhóm khác.
+vbsec đã được chạy thử trên các ứng dụng mã nguồn mở có chủ đích chứa lỗ hổng dùng cho mục đích đào tạo (như OWASP Juice Shop) — và phát hiện được các lỗ hổng tương ứng với những challenge đã được tài liệu hoá: SQL Injection, NoSQL Injection, JWT misuse, Broken Access Control, Mass Assignment, RCE qua deserialization, và nhiều nhóm khác.
 
 Bộ quy tắc chung áp dụng cho mọi ngôn ngữ lập trình. Các quy tắc chuyên sâu theo ngôn ngữ hiện có cho Go, PHP, TypeScript/JavaScript và Python, bao phủ các framework phổ biến: React, Vue, Angular, Express, NestJS, Next.js, Django, Flask, FastAPI, SQLAlchemy, Sequelize, Prisma, Mongoose. Các ngôn ngữ khác đang nằm trong lộ trình phát triển.
 
